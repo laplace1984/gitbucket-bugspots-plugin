@@ -14,7 +14,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
   override val description: String = "Bug Prediction at Google"
 
   override val versions: Seq[Version] = Seq(
-    Version(1, 0))
+    Version(1, 1))
 
   override val controllers = Seq(
     "/*" -> new BugSpotsController
