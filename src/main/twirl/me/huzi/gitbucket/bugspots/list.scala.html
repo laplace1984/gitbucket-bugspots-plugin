@@ -7,10 +7,10 @@
 @gitbucket.core.html.main("Bug Spots", Some(repository)){
   @gitbucket.core.html.menu("bugspots", repository){
     <div class="row-fluid">
-      <div class="span-12">
+      <div class="col-xs-12">
 
         <form action="@url(repository)/bugspots" method="GET" class="form-inline">
-          <input class="span11 input-block-level" type="text" name="regex" value="@regex" placeholder="Regex pattern.">
+          <input class="col-xs-11" type="text" name="regex" value="@regex" placeholder="Regex pattern.">
           <button class="btn" type="submit">Search</button>
         </form>
 
@@ -46,11 +46,11 @@
             <div class="muted" style="background-color: white;">
               <i class="octicon octicon-git-commit"></i> Found @fixes.length bugfix commits
             </div>
-            <div class="box-commits">
+            <div class="list-group box-commits">
               @fixes.map { fix =>
               @Some(fix.commit).map { commit =>
-              <div class="box-content-row" style="padding: 8px;">
-                <ul class="nav nav-pills-group pull-right" style="margin-top: 2px; margin-bottom: 0px; margin-right: 4px;">
+              <div class="list-group-item">
+                <ul class="nav nav-pills pull-right">
                   <li class="first"><a href="@url(repository)/commit/@commit.id" class="link monospace">@commit.id.substring(0, 7)</a></li>
                   <li class="last"><a href="@url(repository)/tree/@commit.id" style="padding-top: 9px; padding-bottom: 10px;"><i class="octicon octicon-code link"></i></a></li>
                 </ul>
