@@ -9,12 +9,12 @@
     <div class="row-fluid">
       <div class="col-xs-12">
 
-        <form action="@url(repository)/bugspots" method="GET" class="form-inline">
-          <input class="col-xs-11" type="text" name="regex" value="@regex" placeholder="Regex pattern.">
+        <form action="@url(repository)/bugspots" method="GET" class="form-inline" style="margin-bottom:20px;">
+          <input class="form-control" type="text" name="regex" value="@regex" placeholder="Regex pattern." style="width:400px; ">
           <button class="btn" type="submit">Search</button>
         </form>
 
-        <ul id="myTab" class="nav nav-tabs">
+        <ul id="myTab" class="nav nav-tabs" style="margin-bottom:20px;">
           <li data-toggle="tab"><a href="#hotspots">Hotspots</a></li>
           <li data-toggle="tab"><a href="#fixes">Fixes</a></li>
         </ul>
