@@ -16,6 +16,10 @@ It will viewing the bug prediction at Google.
 
 ## Release Notes
 
+### 1.2
+
+- make the plugin compatible with gitbucket 4.0
+
 ### 1.1
 
 - make the plugin compatible with gitbucket 3.8
